@@ -27,7 +27,9 @@ Custom Model: The model.py script in the src directory defines a custom machine 
 Data Loader: The data_loader.py script provides functions to load and preprocess data, making it convenient to integrate data handling into various parts of the project.
 
 Getting Started
-Clone this repository: git clone https://github.com/your-username/hotel-price-prediction.git
+Clone this repository: git clone[ https://github.com/your-username/hotel-price-prediction.git](https://www.kaggle.com/code/sonawanelalitsunil/hotel-book-prediction-using-machine-learning)
+
+https://github.com/lalitssonawane/HOTEL-BOOKING-PREDICTION-Kaggle
 Navigate to the project directory: cd hotel-price-prediction
 Install dependencies: pip install -r requirements.txt
 Follow the notebooks in the notebooks directory to preprocess data and train the model.
