@@ -1,45 +1,25 @@
-# HOTEL-BOOKING-PREDICTION-Kaggle
+# HOTEL_BOOKING_PREDICTION
+Machine learning model that can predict whether a particular booking that has been done by customer is going to cancel or not
 
-Hotel Booking Price Prediction
-Project Overview
-This repository contains a machine learning project focused on predicting hotel booking prices. The project utilizes historical hotel booking data to build and evaluate predictive models, enabling accurate price predictions for potential customers.
+# PREPARE_DATASET_FOR_ANALYSIS
+Import pandas,numpy, matplotlib, seaborn for data extraction and visualisation. Fill missing values with 0.
 
-Project Structure
-lua
-Copy code
-|-- data
-|   |-- raw_data.csv            # Raw dataset containing historical booking data
-|-- notebooks
-|   |-- data_preprocessing.ipynb # Data cleaning and preprocessing steps
-|   |-- model_training.ipynb     # Model training and evaluation
-|-- src
-|   |-- data_loader.py           # Script for loading and preprocessing data
-|   |-- model.py                 # Custom machine learning model definition
-|-- requirements.txt             # Required Python packages for easy setup
-|-- README.md                    # Project overview, setup instructions, and usage guide
-Features
-Data Preprocessing: The data_preprocessing.ipynb notebook focuses on cleaning the raw dataset, handling missing values, and performing feature engineering. Exploratory data analysis (EDA) is also conducted to understand the distribution of variables and identify potential patterns.
+# VARIOUS_ANALYSIS
+1) Where do the guests come from?Lets perform Spatial Analysis
+![image](https://user-images.githubusercontent.com/42919637/135908241-66c1466a-0000-4e29-855a-23fb76f2f223.png)
 
-Model Training: The model_training.ipynb notebook implements the data loading pipeline, trains a predictive machine learning model using the preprocessed data, and evaluates its performance using appropriate metrics like Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE).
+2) How much do guests pay for a room per night?
+![image](https://user-images.githubusercontent.com/42919637/135908460-1c514935-a264-4e85-a2fb-b9c7eb03ba1d.png)
 
-Custom Model: The model.py script in the src directory defines a custom machine learning model architecture tailored for the hotel booking price prediction task. The architecture can be easily replaced with other models for experimentation.
+3) How does the price per night vary over the year?
+![image](https://user-images.githubusercontent.com/42919637/135908575-d7651ea8-f26a-479e-a62f-3cae6747eb5d.png)
 
-Data Loader: The data_loader.py script provides functions to load and preprocess data, making it convenient to integrate data handling into various parts of the project.
+4) Which are the most busy month or in which months Guests are high?
+![image](https://user-images.githubusercontent.com/42919637/135908704-78cfc750-c54a-4a38-bc01-9c61fcda0e4d.png)
 
-Getting Started
-Clone this repository: git clone[ https://github.com/your-username/hotel-price-prediction.git](https://www.kaggle.com/code/sonawanelalitsunil/hotel-book-prediction-using-machine-learning)
+# FIND_CORRELATION
+By seeing correlation corresponding to is_canceled, i have excluded the columns which show less correlation value.
 
-https://github.com/lalitssonawane/HOTEL-BOOKING-PREDICTION-Kaggle
-Navigate to the project directory: cd hotel-price-prediction
-Install dependencies: pip install -r requirements.txt
-Follow the notebooks in the notebooks directory to preprocess data and train the model.
-Usage
-Follow the steps outlined in the notebooks to preprocess data and train the model.
-Experiment with different preprocessing techniques, feature engineering strategies, and model architectures.
-Evaluate the model's performance using the provided evaluation metrics.
-Use the trained model to predict hotel booking prices for new data.
-Contributing
-Contributions are welcome! If you find any issues or want to enhance the project, feel free to create a pull request.
+# Performed mean_encoding_technique
 
-License
-This project is licensed under the MIT License.
+# FEATURE_IMPORTANCE to select most important feature
